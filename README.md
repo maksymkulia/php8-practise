@@ -25,6 +25,19 @@ namedArguments(first: 22, third: true)
 ```
 
 ## Match Expressions
+Something like switch/case but more compact
+```php
+$statusCode = 400;
+
+$msg = match($statusCode) {
+    200, 300 => 'ok',
+    400 => 'Not found',
+    500 => 'Server error',
+    default => 'ups'
+};
+
+echo $msg;
+```
 
 ## Attributes
 
