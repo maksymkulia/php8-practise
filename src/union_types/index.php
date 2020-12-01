@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 require_once 'Models/AbstractClass.php';
 require_once 'Models/FinalClass.php';
 

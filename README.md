@@ -11,7 +11,18 @@ public int|string $someIntOrString;
 ...
 public final function convertAll(): array|string
 ```
+
 ## Named Arguments
+Now it is possible to pass arguments to function by their names:
+```php
+function namedArguments(
+    string|int $first,
+    ?string $second = null,
+    bool $third
+): array
+...
+namedArguments(first: 22, third: true)
+```
 
 ## Match Expressions
 
