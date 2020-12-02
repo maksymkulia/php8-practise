@@ -1,8 +1,10 @@
 # Practise new features of PHP 8
+_Note: Poor support by PHPStorm IDE._
 
 ## Install
 * In terminal run: ``docker-compose up -d``
 * Open [localhost:8001](http://localhost:8001)
+
 ## Union Types
 Now you can use multiple types as arguments and returns.
 ```php
@@ -45,6 +47,13 @@ or annotations.
 More time needed.
 
 ## Constructor Property Promotion
+Not working for Abstract Classes
+```php
+public function __construct(
+        public string $a,
+        public int $b
+    ) {}
+```
 
 ## Nullsafe operator
 
