@@ -56,6 +56,16 @@ public function __construct(
 ```
 
 ## Nullsafe operator
+Was:
+```php
+if($user !== null) {
+    $res = $user->getAge();
+}
+```
+Now:
+```php
+$res = $user?->getAge();
+```
 
 ## New static return type
 
