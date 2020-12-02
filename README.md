@@ -68,7 +68,28 @@ $res = $user?->getAge();
 ```
 
 ## New static return type
+Now you can write static as return type
+```php
+class Foo
+{
+    public function test(): static
+    {
+        return new static();
+    }
+}
+```
 
 ## New mixed type
+instead of this: ``string|int|array``, you can write this:
+```php
+function bar(): mixed {}
+```
+Looks like bad practice.
 
 ## Allowing ::class on objects
+instead of this: ``get_class($foo)``, you can now write this:
+```php
+$foo = new Foo();
+
+var_dump($foo::class);
+```
